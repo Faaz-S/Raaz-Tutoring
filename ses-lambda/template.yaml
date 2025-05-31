@@ -1,0 +1,57 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Contact Form Lambda + SES
+
+Globals:
+  Function:
+    Timeout: 10
+    Runtime: nodejs18.x
+    Environment:
+      Variables:
+        FROM_EMAIL: raaztutoring@gmail.com
+        TO_EMAIL: raaztutoring@gmail.com
+
+Resources:
+  ContactApi:
+    Type: AWS::Serverless::Api
+    Properties:
+      Name: ContactApi
+      StageName: Prod                 
+      Cors:
+        AllowMethods: "'POST,OPTIONS'"
+        AllowHeaders: "'Content-Type'"
+        AllowOrigin: "'*'"
+
+  ContactFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: .
+      Handler: src/index.handler
+      Role: !GetAtt LambdaSesRole.Arn
+      Events:
+        ContactApiEvent:
+          Type: Api
+          Properties:
+            RestApiId: !Ref ContactApi
+            Path: /contact
+            Method: post
+            
+
+  LambdaSesRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+        - arn:aws:iam::aws:policy/AmazonSESFullAccess
+Outputs:
+  ContactApiUrl:
+    Description: "Invoke URL for the contact form API"
+    Value: !Sub |
+      https://${ContactApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/contact
