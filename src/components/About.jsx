@@ -20,8 +20,8 @@ export default function About() {
         that, Raaz Tutoring began its journey.`
       ],
       photos: [
-        { src: '/images/Faaz_new.jpg', caption: 'Faaz Sherwani (Co-Founder)' },
-        { src: '/images/Rhea.jpg', caption: 'Rhea Misra (Co-Founder)' }
+        { src: '/public/images/Faaz_new.jpg', caption: 'Faaz Sherwani (Co-Founder)' },
+        { src: '/public/images/Rhea.jpg', caption: 'Rhea Misra (Co-Founder)' }
       ]
     },
     
