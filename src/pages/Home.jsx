@@ -34,7 +34,7 @@ export default function Home() {
               className="absolute -left-16 -top-16 w-72 h-72 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50"
             />
             <img
-              src="/public/images/student-studying.jpg"
+              src="images/student-studying.jpg"
               alt="Tutoring illustration"
               className="relative rounded-lg shadow-lg"
             />
@@ -71,7 +71,7 @@ export default function Home() {
           {/* Left Column: Image + Contact Info */}
           <div className="lg:w-1/2 space-y-6">
             <img
-              src="/public/images/FAQ-image.png"
+              src="images/FAQ-image.png"
               alt="Students learning"
               className="rounded-lg shadow-lg w-full h-auto"
             />
