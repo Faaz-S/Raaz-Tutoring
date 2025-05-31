@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Grades79 from './pages/Grades79';
 import Grades1012 from './pages/Grades1012';  
-import About from './components/About';
+import About from './pages/About';
 
 function App() {
   return (
