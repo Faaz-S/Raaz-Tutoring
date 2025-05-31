@@ -10,7 +10,7 @@ console.log('Lambda Init - REGION:', REGION);
 console.log('Lambda Init - FROM_EMAIL:', FROM);
 console.log('Lambda Init - TO_EMAIL:', TO);
 // >>> END ADDITIONS <<<
-
+m      
 const ses = new SESClient({ region: REGION });
 
 export const handler = async (event) => {
