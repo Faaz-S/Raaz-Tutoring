@@ -2,18 +2,27 @@ import React, { useState } from 'react';
 
 const testimonialData = [
   {
-    name: 'Alice Smith',
-    feedback: 'Raaz Tutoring helped me improve my grades significantly. The sessions were engaging and effective!',
+    name: 'Varun',
+    feedback: 'Raaz Tutoring helped my son finally grasp the tricky math concepts he was struggling with. The sessions were engaging and tailored to his learning style, and he’s now much more confident in class!',
   },
   {
-    name: 'John Doe',
-    feedback: 'I loved the personalized approach. The tutors really care and make learning fun!',
+    name: 'Ava',
+    feedback: 'I’ve always found math stressful, but Raaz Tutoring made it so much easier to understand. The explanations were clear, and they always took time to answer my questions.',
   },
   {
-    name: 'Emily Johnson',
-    feedback: 'Great tutors and flexible schedule. Highly recommend Raaz Tutoring to anyone who wants to excel.',
+    name: 'Isabelle',
+    feedback: 'I’ve tried several tutors before, but none matched the patience and dedication of Raaz Tutoring. My daughter looks forward to her lessons every week!',
+  },
+  {
+    name: 'Khalid',
+    feedback: 'Raaz Tutoring turned my grade 10 math grade around! I went from a C to an A in just one semester, and I actually enjoy math now.',
+  },
+  {
+    name: 'Rohan',
+    feedback: 'I appreciated how flexible and professional Raaz Tutoring was. They always found ways to fit in sessions around my busy schedule, and the support was amazing.',
   },
 ];
+
 
 function Testimonials() {
   const [index, setIndex] = useState(0);
