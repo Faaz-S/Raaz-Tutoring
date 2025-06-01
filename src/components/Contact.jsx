@@ -20,7 +20,7 @@ export default function Contact() {
         body: JSON.stringify(form)
       });
       if (!res.ok) throw new Error();
-      setStatus('Message sent!');
+      setStatus('Your message has been sent successfully!. You will be contacted by a member of our team shortly.');
       setForm({ name: '', email: '', message: '' });
     } catch {
       setStatus('Failed to send. Please try again later.');

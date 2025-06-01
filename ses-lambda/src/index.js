@@ -19,7 +19,7 @@ export const handler = async (event) => {
 
     const params = {
       Destination: { ToAddresses: [TO] },
-      FromEmailAddress: FROM,
+      Source: FROM,
       Message: {
         Subject: { Data: `New Contact Form Message from ${name}` },
         Body: {
