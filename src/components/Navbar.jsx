@@ -1,44 +1,40 @@
-// src/components/Navbar.jsx
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+// import DarkModeToggle from './DarkModeToggle';
+import { motion } from 'framer-motion';
+
+const links = [
+  { to: '/', label: 'Home' },
+  { to: '/grades-7-9', label: 'Grades 7-9' },
+  { to: '/grades-10-12', label: 'Grades 10-12'},
+  { to: '/about', label: 'About' },
+   
+];
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 bg-white z-50 shadow">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <NavLink to="/" className="text-2xl font-bold">Raaz Tutoring</NavLink>
-        <div className="space-x-6 flex items-center">
-          <NavLink to="/" end
-            className={({ isActive }) =>
-              isActive ? 'text-blue-600 border-b-2 border-blue-600 pb-1' : 'text-gray-700 hover:text-blue-600'
-            }
-          >
-            Home
-          </NavLink>
-          <NavLink to="/grades-7-9" 
-            className={({ isActive }) =>
-              isActive ? 'text-blue-600 border-b-2 border-blue-600 pb-1' : 'text-gray-700 hover:text-blue-600'
-            }
-          >
-            Grades 7–9
-          </NavLink>
-          <NavLink to="/grades-10-12"
-            className={({ isActive }) =>
-              isActive ? 'text-blue-600 border-b-2 border-blue-600 pb-1' : 'text-gray-700 hover:text-blue-600'
-            }
-          >
-            Grades 10–12
-          </NavLink>
-          <NavLink to="/about-us"
-            className={({ isActive }) =>
-              isActive ? 'text-blue-600 border-b-2 border-blue-600 pb-1' : 'text-gray-700 hover:text-blue-600'
-            }
-          >
-            About Us
-          </NavLink>
-          
+    <motion.nav initial={{ y: -100 }} animate={{ y: 0 }} transition={{ duration: 0.5 }} className="fixed w-full z-20 bg-bgDark shadow-md">
+      <div className="container mx-auto flex justify-between items-center px-4 py-3">
+        <div className= "text-accent font-display text-2xl">Raaz Tutoring</div>
+        <div className="hidden md:flex space-x-4 items-center">
+          {links.map((link) => (
+            <NavLink
+              key={link.to}
+              to={link.to}
+              className={({ isActive }) =>
+                `px-3 py-1 rounded font-medium transition-colors ${isActive ? 'bg-primary text-white' : 'text-gray-300 hover:bg-gray-700'}`
+              }
+            >
+              {link.label}
+            </NavLink>
+          ))}
+          {/* <DarkModeToggle /> */}
+        </div>
+        <div className="md:hidden">
+          {/* Mobile menu icon here */}
+          {/* <DarkModeToggle /> */}
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 }

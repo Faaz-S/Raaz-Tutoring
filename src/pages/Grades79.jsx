@@ -43,7 +43,7 @@ export default function Grades79() {
       {/* Overview */}
       <motion.section variants={item} className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-lg mb-12">
         <h2 className="text-3xl font-bold mb-4">Overview</h2>
-        <p>At Raaz Tutoring, we specialize in building strong mathematical foundations during these pivotal middle school years. Our personalized online approach helps students transition from basic arithmetic to more advanced concepts with confidence. We focus on developing critical thinking skills while ensuring students master the core concepts they'll need for high school success.</p>
+        <p>At Raaz, we specialize in building strong mathematical foundations during these pivotal middle school years. Our personalized online approach helps students transition from basic arithmetic to more advanced concepts with confidence. We focus on developing critical thinking skills while ensuring students master the core concepts they'll need for high school success.</p>
       </motion.section>
 
       {/* Topics Table as Cards */}

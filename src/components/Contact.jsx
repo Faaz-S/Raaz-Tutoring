@@ -51,7 +51,7 @@ export default function Contact() {
     <form
       id="contact"
       onSubmit={handleSubmit}
-      className="bg-white shadow-md rounded-lg p-6 space-y-4"
+      className="w-full bg-black border border-gray-600 rounded-md px-3 py-2 placeholder-gray-400"
     >
       <input
         name="name"
@@ -60,7 +60,7 @@ export default function Contact() {
         type="text"
         placeholder="Your Name"
         required
-        className="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-400"
+        className="w-full bg-black border border-gray-600 rounded-md px-3 py-2 placeholder-gray-400"
       />
 
       <input
@@ -70,7 +70,7 @@ export default function Contact() {
         type="email"
         placeholder="Your Email"
         required
-        className="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-400"
+        className="w-full bg-black border border-gray-600 rounded-md px-3 py-2 placeholder-gray-400"
       />
 
       <input
@@ -80,7 +80,7 @@ export default function Contact() {
         type="tel"
         placeholder="Your Contact Number"
         required
-        className="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-400"
+        className="w-full bg-black border border-gray-600 rounded-md px-3 py-2 placeholder-gray-400"
       />
 
       <textarea
@@ -90,12 +90,12 @@ export default function Contact() {
         rows="4"
         placeholder="Your Message"
         required
-        className="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-400"
+        className="w-full bg-black border border-gray-600 rounded-md px-3 py-2 placeholder-gray-400"
       />
 
       <button
         type="submit"
-        className="w-full bg-blue-600 text-white rounded-md px-4 py-2 hover:bg-blue-700 transition"
+        className="w-full bg-secondary text-white rounded-md px-4 py-2 hover:bg-red-700 transition"
       >
         Send Message
       </button>

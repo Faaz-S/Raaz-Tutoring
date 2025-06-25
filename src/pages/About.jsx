@@ -2,7 +2,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-
 export default function About() {
   const sections = [
     {
@@ -24,7 +23,6 @@ export default function About() {
         { src: '/images/Rhea.jpg', caption: 'Rhea Misra (Co-Founder)' }
       ]
     },
-    
     {
       key: 'our-approach',
       title: 'Our Approach: Less Talk, More Action',
@@ -82,23 +80,22 @@ export default function About() {
         gaining a dedicated partner who invests in your success. Our tutors celebrate your progress as if it 
         were their own (because in many ways, it is). We measure our success not by how many formulas you've 
         memorized, but by how confidently you approach problems that once seemed impossible.`,
-        `Ready to rewrite your math story? Let's solve this equation together. 
-        `,
+        `Ready to rewrite your math story? Let's solve this equation together.`
       ]
     }
   ];
 
   const container = {
     hidden: { opacity: 0 },
-    show:   { opacity: 1, transition: { staggerChildren: 0.2 } }
+    show: { opacity: 1, transition: { staggerChildren: 0.2 } }
   };
   const sectionAnim = {
     hidden: { opacity: 0, y: 20 },
-    show:   { opacity: 1, y: 0 }
+    show: { opacity: 1, y: 0 }
   };
   const imgAnim = {
     hidden: { opacity: 0, scale: 0.9 },
-    show:   { opacity: 1, scale: 1 }
+    show: { opacity: 1, scale: 1 }
   };
 
   return (
@@ -108,66 +105,80 @@ export default function About() {
       initial="hidden"
       animate="show"
     >
-      
-
       <h1 className="text-5xl font-extrabold text-center mb-16">About Raaz Tutoring</h1>
 
       {sections.map(sec => (
         <motion.section key={sec.key} variants={sectionAnim} className="mb-20">
-          <h2 className="text-3xl font-bold mb-6">{sec.title}</h2>
+          <motion.h2
+            className="text-3xl font-bold mb-6 "
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            {sec.title}
+          </motion.h2>
 
           {sec.content.map((p, i) => (
             <p key={i} className="mb-6 leading-relaxed">{p}</p>
           ))}
+
           {sec.photos && (
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-    {sec.photos.map((photo, i) => (
-      <motion.div
-        key={i}
-        className="flex flex-col items-center bg-white rounded-2xl shadow-md overflow-hidden"
-        variants={imgAnim}
-        transition={{ duration: 0.6, delay: i * 0.2 }}
-      >
-        <div className="w-full h-60 md:h-80 bg-gradient-to-br from-blue-50 to-purple-50 flex items-center justify-center">
-          <img
-            src={photo.src}
-            alt={`${sec.title} ${i + 1}`}
-            className="object-contain max-h-full max-w-full"
-          />
-        </div>
-        <p className="mt-3 pb-4 text-center text-sm font-medium text-gray-700">
-          {photo.caption}
-        </p>
-      </motion.div>
-    ))}
-  </div>
-)}
-          {/* Any lists */}
-          {sec.list && (
-            <ul className="list-disc list-inside space-y-4 ml-6">
-              {sec.list.map((li, i) => (
-                <li key={i} className="leading-snug">
-                  {typeof li === 'string'
-                    ? li
-                    : <>
-                        <span className="font-semibold">{li.label}:</span> {li.desc}
-                      </>
-                  }
-                </li>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              {sec.photos.map((photo, i) => (
+                <motion.div
+                  key={i}
+                  className="flex flex-col items-center bg-white rounded-2xl shadow-md overflow-hidden"
+                  variants={imgAnim}
+                  transition={{ duration: 0.6, delay: i * 0.2 }}
+                >
+                  <div className="w-full h-60 md:h-80 bg-gradient-to-br from-blue-50 to-purple-50 flex items-center justify-center">
+                    <img
+                      src={photo.src}
+                      alt={`${sec.title} ${i + 1}`}
+                      className="object-contain max-h-full max-w-full"
+                    />
+                  </div>
+                  <p className="mt-3 pb-4 text-center text-sm font-medium text-gray-700">
+                    {photo.caption}
+                  </p>
+                </motion.div>
               ))}
-            </ul>
+            </div>
           )}
 
-          {/* Contact link at end of last section */}
+          {sec.list && (
+            <div className="grid md:grid-cols-2 gap-6 mt-8">
+              {sec.list.map((li, i) => (
+                <motion.div
+                  key={i}
+                  variants={imgAnim}
+                  transition={{ duration: 0.4, delay: i * 0.1 }}
+                  className="p-6 bg-gray-50 border-l-4 border-blue-900 rounded-xl shadow hover:shadow-md transition"
+                >
+                  {typeof li === 'string' ? (
+                    <p className="text-gray-800 text-base flex items-start">
+                      <span className="text-green-500 mr-2 text-xl">✅</span>
+                      {li}
+                    </p>
+                  ) : (
+                    <>
+                      <h3 className="text-lg font-semibold text-blue-900 mb-1">{li.label}</h3>
+                      <p className="text-gray-700 text-sm">{li.desc}</p>
+                    </>
+                  )}
+                </motion.div>
+              ))}
+            </div>
+          )}
+
           {sec.key === 'why-choose-us' && (
-            <p className="mt-8 text-center">
-              <a href="/" className="text-blue-600 hover:underline font-semibold inline-flex items-center">
-                <span>👉</span>
-              
-                <span className="ml-2">Contact us today to schedule your first session.</span>
-               
+            <div className="mt-12 flex justify-center">
+              <a
+                href="#contact"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full shadow-lg text-lg font-semibold transition"
+              >
+                📞 Contact us today to schedule your first session
               </a>
-            </p>
+            </div>
           )}
         </motion.section>
       ))}
