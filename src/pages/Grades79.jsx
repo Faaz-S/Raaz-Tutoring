@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import TopicQuiz from '../components/TopicQuiz';
+import { Helmet } from 'react-helmet';
 
 const TOPICS_TABLE = [
   { title: 'Linear Algebra', items: ['Vectors', 'Matrices', 'Systems of Equations'] },
@@ -40,6 +41,16 @@ export default function Grades79() {
       initial="hidden"
       animate="show"
     >
+      
+
+<Helmet>
+  <title>Grades 7–9 Math Help | Raaz Tutoring</title>
+  <meta name="description" content="Master middle school math with personalized tutoring for Grades 7–9. Learn pre-algebra, geometry, statistics, and more with fun, interactive sessions." />
+  <meta name="keywords" content="grade 7 math tutoring, grade 8 math help, pre-algebra, middle school math Canada, Raaz Tutoring grades 7-9" />
+  <meta name="author" content="Raaz Tutoring" />
+  <link rel="canonical" href="https://raaz-tutoring.vercel.app/grades-7-9" />
+</Helmet>
+
       {/* Overview */}
       <motion.section variants={item} className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-lg mb-12">
         <h2 className="text-3xl font-bold mb-4">Overview</h2>

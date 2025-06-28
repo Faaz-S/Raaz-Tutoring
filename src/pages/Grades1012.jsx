@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import TopicQuiz from '../components/TopicQuiz';
+import { Helmet } from 'react-helmet';
 
 // Topics displayed in "Topics We Cover" section, including extra ones (no quizzes for extras)
 const TOPICS_DISPLAY = [
@@ -41,6 +42,16 @@ export default function Grades1012() {
       initial="hidden"
       animate="show"
     >
+     
+
+<Helmet>
+  <title>Grades 10–12 Math Tutoring | AP/IB Help | Raaz Tutoring</title>
+  <meta name="description" content="High school math tutoring for Grades 10–12. Boost your confidence in calculus, trig, and algebra. AP and IB support available." />
+  <meta name="keywords" content="grade 11 math help, grade 12 math tutoring, AP math tutor, IB math, high school math Canada, Raaz Tutoring grades 10-12" />
+  <meta name="author" content="Raaz Tutoring" />
+  <link rel="canonical" href="https://raaz-tutoring.vercel.app/grades-10-12" />
+</Helmet>
+
       {/* Overview */}
       <motion.section variants={item} className="bg-green-50 border-l-4 border-green-500 p-6 rounded-lg mb-12">
         <h2 className="text-3xl font-bold mb-4">Overview</h2>

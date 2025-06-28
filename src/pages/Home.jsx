@@ -5,6 +5,7 @@ import HowItWorksSection from '../components/HowItWorksSection';
 import FAQ from '../components/FAQ';
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import React, { useRef, useEffect } from 'react';
 
 
@@ -13,6 +14,17 @@ export default function Home() {
 
   return (
     <div className="text-gray-800">
+      {/* Meta Tags for SEO */}
+      
+
+      <Helmet>
+        <title>Raaz Tutoring | Personalized Math Tutoring (Grades 7–12)</title>
+        <meta name="description" content="Expert online math tutoring for Grades 7-12. One-on-one AP, IB, and school curriculum help to boost confidence and scores." />
+        <meta name="keywords" content="Raaz Tutoring, math tutoring, high school math, AP math, IB math, grade 7 math, grade 12 math, online tutoring Canada" />
+        <meta name="author" content="Raaz Tutoring" />
+        <link rel="canonical" href="https://raaz-tutoring.vercel.app/" />
+      </Helmet>
+
       {/* Hero Section with anchor link */}
       <div className='bg-bgDark'>
         <Hero />

@@ -1,6 +1,7 @@
 // src/components/About.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
+ import { Helmet } from 'react-helmet';
 
 export default function About() {
   const sections = [
@@ -105,6 +106,16 @@ export default function About() {
       initial="hidden"
       animate="show"
     >
+     
+
+      <Helmet>
+        <title>About Raaz Tutoring | Our Story & Approach</title>
+        <meta name="description" content="Learn how Raaz Tutoring began and what makes our approach to math education different. Meet our passionate tutors and our mission." />
+        <meta name="keywords" content="About Raaz Tutoring, math tutoring story, tutoring approach, Faaz Sherwani, Rhea Misra" />
+        <meta name="author" content="Raaz Tutoring" />
+        <link rel="canonical" href="https://raaz-tutoring.vercel.app/about" />
+      </Helmet>
+
       <h1 className="text-5xl font-extrabold text-center mb-16">About Raaz Tutoring</h1>
 
       {sections.map(sec => (
