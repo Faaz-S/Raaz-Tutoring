@@ -56,3 +56,8 @@ raaz-tutoring/
 ├── tailwind.config.js
 └── vite.config.js
 ```
+
+1. Fix About Us Link in the footer
+2. Logan's testimonial
+3. Add Krishh's testimonial.
+4. Make the video in Hero section faster
