@@ -12,7 +12,8 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
-        display: ['Merriweather', 'serif']
+        display: ['Merriweather', 'serif'],
+        doodle: ['"Permanent Marker"', 'cursive']
       }
     },
   },

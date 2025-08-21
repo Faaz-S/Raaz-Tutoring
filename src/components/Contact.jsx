@@ -51,7 +51,7 @@ export default function Contact() {
     <form
       id="contact"
       onSubmit={handleSubmit}
-      className="w-full bg-black border border-gray-600 rounded-md px-3 py-2 placeholder-gray-400"
+      className="w-full space-y-4"
     >
       <input
         name="name"
@@ -60,7 +60,7 @@ export default function Contact() {
         type="text"
         placeholder="Your Name"
         required
-        className="w-full bg-black border border-gray-600 rounded-md px-3 py-2 placeholder-gray-400"
+        className="w-full bg-black border border-gray-600 rounded-md px-3 py-2 placeholder-gray-400 text-white transition-all duration-300 hover:border-cyan-400 hover:shadow-[0_0_15px_rgba(34,211,238,0.4)] focus:border-cyan-400 focus:shadow-[0_0_15px_rgba(34,211,238,0.4)] focus:outline-none"
       />
 
       <input
@@ -70,7 +70,7 @@ export default function Contact() {
         type="email"
         placeholder="Your Email"
         required
-        className="w-full bg-black border border-gray-600 rounded-md px-3 py-2 placeholder-gray-400"
+        className="w-full bg-black border border-gray-600 rounded-md px-3 py-2 placeholder-gray-400 text-white transition-all duration-300 hover:border-pink-400 hover:shadow-[0_0_15px_rgba(244,114,182,0.4)] focus:border-pink-400 focus:shadow-[0_0_15px_rgba(244,114,182,0.4)] focus:outline-none"
       />
 
       <input
@@ -80,7 +80,7 @@ export default function Contact() {
         type="tel"
         placeholder="Your Contact Number"
         required
-        className="w-full bg-black border border-gray-600 rounded-md px-3 py-2 placeholder-gray-400"
+        className="w-full bg-black border border-gray-600 rounded-md px-3 py-2 placeholder-gray-400 text-white transition-all duration-300 hover:border-green-400 hover:shadow-[0_0_15px_rgba(74,222,128,0.4)] focus:border-green-400 focus:shadow-[0_0_15px_rgba(74,222,128,0.4)] focus:outline-none"
       />
 
       <textarea
@@ -90,12 +90,12 @@ export default function Contact() {
         rows="4"
         placeholder="Your Message"
         required
-        className="w-full bg-black border border-gray-600 rounded-md px-3 py-2 placeholder-gray-400"
+        className="w-full bg-black border border-gray-600 rounded-md px-3 py-2 placeholder-gray-400 text-white transition-all duration-300 hover:border-yellow-400 hover:shadow-[0_0_15px_rgba(250,204,21,0.4)] focus:border-yellow-400 focus:shadow-[0_0_15px_rgba(250,204,21,0.4)] focus:outline-none resize-vertical"
       />
 
       <button
         type="submit"
-        className="w-full bg-secondary text-white rounded-md px-4 py-2 hover:bg-red-700 transition"
+        className="w-full bg-secondary text-white rounded-md px-4 py-2 transition-all duration-300 hover:bg-red-700 hover:shadow-[0_0_20px_rgba(220,38,38,0.5)] hover:border hover:border-red-400"
       >
         Send Message
       </button>

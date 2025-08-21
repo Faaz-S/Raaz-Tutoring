@@ -2,6 +2,7 @@ import React from 'react';
 import { FaInstagram } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Contact from '../components/Contact';
+import logo from '/images/logo.png';
 
 export default function Footer() {
   return (
@@ -15,15 +16,22 @@ export default function Footer() {
 
         {/* Divider */}
         <div className="border-t border-gray-700 pt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Logo space */}
-          <div className="text-white text-lg font-bold">Raaz Tutoring</div>
+          {/* Logo section */}
+          <div className="flex flex-col items-center md:items-start">
+            <img
+              src={logo}
+              alt="Raaz Tutoring Logo"
+              className="w-32 h-auto mb-3"
+            />
+            <div className="text-white text-lg font-bold">Raaz Tutoring</div>
+          </div>
 
           {/* Quick Links */}
           <div>
             <h3 className="font-semibold mb-2 text-white">Quick Links</h3>
             <ul className="space-y-1">
               <li><Link to="/" className="hover:text-white">Home</Link></li>
-              <li><Link to="/about-us" className="hover:text-white">About Us</Link></li>
+              <li><Link to="/about" className="hover:text-white">About Us</Link></li>
               <li><Link to="/grades-7-9" className="hover:text-white">Grades 7–9</Link></li>
               <li><Link to="/grades-10-12" className="hover:text-white">Grades 10–12</Link></li>
             </ul>
@@ -38,7 +46,7 @@ export default function Footer() {
             <div className="mt-4">
               <h3 className="font-semibold mb-2 text-white">Follow Us</h3>
               <div className="flex space-x-4">
-                <a href="#" className="hover:text-white"><FaInstagram size={20} /></a>
+                <a href="https://www.instagram.com/raaztutoring/" target="_blank" rel="noopener noreferrer" className="hover:text-white"><FaInstagram size={20} /></a>
               </div>
             </div>
           </div>

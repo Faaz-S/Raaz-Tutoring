@@ -20,7 +20,7 @@ const TOPICS_DISPLAY = [
 ];
 
 // Topics that have quizzes
-const QUIZ_TOPICS = ['Quadratics', 'Trigonometry', 'Calculus', 'Logarithms'];
+const QUIZ_TOPICS = ['Quadratics', 'Trigonometry', 'Calculus', 'Logarithms', 'AP Calculus'];
 
 const FEATURES = [
   { icon: '🖥️', title: 'Interactive Whiteboards', desc: 'Real-time drawing & problem-solving, just like a live classroom.' },
@@ -139,6 +139,10 @@ export default function Grades1012() {
                 selectedTopic === t
                   ? 'bg-green-500 text-white'
                   : 'bg-white text-gray-800 border-gray-400 hover:bg-gray-100'
+              } ${
+                t === 'AP Calculus' 
+                  ? 'shadow-lg shadow-purple-400/50 border-purple-300 hover:shadow-purple-400/70 transition-shadow duration-300'
+                  : ''
               }`}
             >
               {t}

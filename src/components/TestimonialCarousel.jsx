@@ -59,16 +59,19 @@ function TestimonialCarousel() {
             ◀
           </button>
 
-          {/* Image */}
-          <img
-            src={image}
-            alt={name}
-            className="w-48 h-48 md:w-56 md:h-56  object-cover border-4 rounded-lg"
-          />
+          {/* Image Container - Fixed Size */}
+          <div className="w-48 h-48 md:w-56 md:h-56 flex-shrink-0">
+            <img
+              src={image}
+              alt={name}
+              className="w-full h-full object-cover object-top border-4 rounded-lg"
+              style={{ objectPosition: '50% 20%' }}
+            />
+          </div>
 
-          {/* Feedback box */}
-          <div className="flex-1 bg-white bg-opacity-0 text-white p-6 rounded-lg border border-white/20 backdrop-blur-md shadow-inner">
-            <p className="italic mb-4 text-lg leading-relaxed">"{feedback}"</p>
+          {/* Feedback box - Fixed Height */}
+          <div className="flex-1 bg-white bg-opacity-0 text-white p-6 rounded-lg border border-white/20 backdrop-blur-md shadow-inner min-h-[280px] md:min-h-[224px] flex flex-col justify-between">
+            <p className="italic mb-4 text-lg leading-relaxed flex-grow">"{feedback}"</p>
             <p className="font-semibold text-right mt-4">- {name}</p>
           </div>
 

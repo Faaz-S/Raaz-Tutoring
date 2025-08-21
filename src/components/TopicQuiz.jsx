@@ -4,61 +4,68 @@ import React, { useState } from 'react';
 // Define question sets for each topic (Grades 7–9 and 10–12)
 const questionSets = {
   'Linear Algebra': [
-    { question: 'Vector addition: (2,1) + (1,4) = ?', options: ['(3,5)', '(1,5)', '(3,4)', '(2,3)'], answer: 0 },
-    { question: 'Which line has a slope of 2. A: 0.5y = x + 2 B: y = 3x - 2?', options: ['A', 'B', 'Both', 'Neither'], answer: 0 },
-    { question: 'Solve: x + y = 5 and 2x - y = 1. x = ?', options: ['1', '2', '3', '4'], answer: 2 },
-    { question: 'Magnitude of vector v = (3,4) is:', options: ['5', '7', '1', '4'], answer: 0 },
-    { question: 'Find the distance between (5,5) and (2,1)', options: ['6', '5', '3', '2'], answer: 1 }
+    { question: 'Vector addition: (2,1) + (1,4) = ?', options: ['(2,4)', '(3,5)', '(3,3)', '(1,3)'], answer: 1 }, // Easy
+    { question: 'What is the slope of the line y = 3x + 7?', options: ['7', '3', '1', '10'], answer: 1 }, // Easy
+    { question: 'Solve: x + y = 5 and 2x - y = 1. Find x:', options: ['1', '2', '3', '4'], answer: 1 }, // Medium
+    { question: 'Find the distance between points (1,2) and (4,6):', options: ['3', '4', '5', '6'], answer: 2 }, // Medium
+    { question: 'If vectors u = (2,-1) and v = (3,4), find u · v (dot product):', options: ['5', '2', '7', '11'], answer: 1 } // Hard
   ],
   'Triangles': [
-    { question: 'Sum of interior angles in a triangle = ?', options: ['180°', '90°', '360°', '270°'], answer: 0 },
-    { question: 'Pythagorean theorem: a² + b² = ?', options: ['2c', 'ab', 'a+b', 'c²'], answer: 3 },
-    { question: 'Similarity: corresponding sides are ?', options: ['Equal','Proportional',  'Perpendicular', 'Complementary'], answer: 1 },
-    { question: 'Isosceles triangle has how many equal sides?', options: ['2', '3', '1', '0'], answer: 0 },
-    { question: 'Area formula: ½ × base × ?', options: ['height', 'angle', 'sum of sides', 'perimeter'], answer: 0 }
+    { question: 'Sum of interior angles in a triangle = ?', options: ['90°', '180°', '270°', '360°'], answer: 1 }, // Easy
+    { question: 'In a right triangle, the longest side is called the:', options: ['base', 'height', 'hypotenuse', 'altitude'], answer: 2 }, // Easy
+    { question: 'If two angles of a triangle are 60° and 80°, what is the third angle?', options: ['30°', '40°', '50°', '20°'], answer: 1 }, // Medium
+    { question: 'A triangle with sides 3, 4, and 5 is:', options: ['scalene', 'isosceles', 'right', 'equilateral'], answer: 2 }, // Medium
+    { question: 'In triangle ABC, if angle A = 70° and angle B = 50°, and side a = 8, find side c using the Law of Sines (sin C = sin 60°):', options: ['6.9', '7.4', '8.0', '9.2'], answer: 1 } // Hard
   ],
   'Statistics': [
-    { question: 'Mean of [2,4,6,8] = ?', options: ['10', '4', '5', '3'], answer: 3 },
-    { question: 'Median of [1,3,7] = ?', options: ['3', '7', '5', '1'], answer: 0 },
-    { question: 'Probability of heads in fair coin = ?', options: ['1/7', '1/3', '1/4', '1/2'], answer: 3 },
-    { question: 'Mode of [2,2,3,4] = ?', options: ['2', '3', '4', 'None'], answer: 0 },
-    { question: 'Range of [5,2,9] = max - min = ?', options: ['4', '7', '5', '9'], answer: 1 }
+    { question: 'Mean of [2,4,6,8] = ?', options: ['4', '5', '6', '7'], answer: 1 }, // Easy
+    { question: 'Median of [1,3,7] = ?', options: ['1', '3', '7', '5'], answer: 1 }, // Easy
+    { question: 'What is the mode of the data set [3, 7, 3, 9, 3, 5]?', options: ['7', '5', '3', '9'], answer: 2 }, // Medium
+    { question: 'If you roll a fair six-sided die, what is the probability of rolling a 4?', options: ['1/4', '1/6', '1/3', '1/2'], answer: 1 }, // Medium
+    { question: 'A dataset has values [10, 12, 15, 18, 20]. What is the standard deviation? (√((Σ(x-μ)²)/n))', options: ['3.1', '3.7', '4.2', '2.8'], answer: 1 } // Hard
   ],
   'Exponents': [
-    { question: '2³ = ?', options: ['8', '6', '4', '9'], answer: 0 },
-    { question: 'x² × x³ = x^?', options: ['5', '6', '1', '2'], answer: 0 },
-    { question: '(a^m)/(a^n) = a^(m-n). True or False?', options: ['True', 'False', 'Sometimes', 'Never'], answer: 0 },
-    { question: '√9 (9^(1/2)) = ?', options: ['3', '9', '1', '4'], answer: 0 },
-    { question: '(2²)³ = ?', options: ['64', '8', '16', '32'], answer: 0 }
+    { question: '2³ = ?', options: ['6', '8', '9', '4'], answer: 1 }, // Easy
+    { question: 'What is 5⁰?', options: ['5', '1', '0', '25'], answer: 1 }, // Easy
+    { question: 'Simplify: x² × x³', options: ['x⁵', 'x⁶', 'x¹', '2x⁵'], answer: 0 }, // Medium
+    { question: 'What is (3²)³?', options: ['3⁶', '3⁵', '9³', '6³'], answer: 0 }, // Medium
+    { question: 'Solve for x: 2^(x+1) = 32', options: ['3', '4', '5', '6'], answer: 1 } // Hard
   ],
   // Grades 10–12 question sets
   'Quadratics': [
-    { question: 'Roots of x² - 5x + 6 = 0 are?', options: ['2 and 3', '1 and 6', '2 and -3', '3 and -2'], answer: 0 },
-    { question: 'Vertex form: y = a(x-h)² + k, h and k locate ?', options: ['Vertex', 'Focus', 'Axis', 'Intercept'], answer: 0 },
-    { question: 'Axis of symmetry of x² - 4x + 3 is x = ?', options: ['2', '4', '3', '1'], answer: 0 },
-    { question: 'Discriminant b² - 4ac positive means ?', options: ['2 real roots', 'No real roots', '1 root', 'Infinite roots'], answer: 0 },
-    { question: 'Factor: x² - 9 = ?', options: ['(x-3)(x+3)', 'x²+9', '(x+3)(x+3)', '(x-9)'], answer: 0 }
+    { question: 'What is the standard form of a quadratic equation?', options: ['y = mx + b', 'ax² + bx + c = 0', 'x = -b/2a', 'y = a(x-h)² + k'], answer: 1 }, // Easy
+    { question: 'Factor: x² - 9', options: ['(x-3)²', '(x-3)(x+3)', '(x+3)²', 'Cannot be factored'], answer: 1 }, // Easy
+    { question: 'Find the vertex of y = x² - 4x + 3:', options: ['(2, -1)', '(4, 3)', '(-2, 1)', '(1, 0)'], answer: 0 }, // Medium
+    { question: 'Using the quadratic formula, solve x² - 5x + 6 = 0:', options: ['x = 1, 6', 'x = 2, 3', 'x = -2, -3', 'x = 5, 6'], answer: 1 }, // Medium
+    { question: 'For the quadratic y = 2x² - 8x + 6, what is the minimum value?', options: ['-2', '-1', '0', '1'], answer: 0 } // Hard
   ],
   'Trigonometry': [
-    { question: 'sin²θ + cos²θ = ?', options: ['1', '0', 'sinθ', 'cosθ'], answer: 0 },
-    { question: 'tanθ = ?', options: ['sinθ/cosθ', 'cosθ/sinθ', '1/sinθ', '1/cosθ'], answer: 0 },
-    { question: 'Unit circle radius = ?', options: ['1', 'π', '0', '2'], answer: 0 },
-    { question: 'sin(30°) = ?', options: ['1/2', '√2/2', '√3/2', '1'], answer: 0 },
-    { question: 'cos(60°) = ?', options: ['1/2', '√2/2', '√3/2', '0'], answer: 0 }
+    { question: 'What is sin(30°)?', options: ['√3/2', '1/2', '√2/2', '1'], answer: 1 }, // Easy
+    { question: 'The unit circle has radius:', options: ['2', '1', 'π', '0'], answer: 1 }, // Easy
+    { question: 'If cos θ = 3/5, what is sin θ? (assuming θ is in quadrant I)', options: ['4/5', '5/4', '3/4', '5/3'], answer: 0 }, // Medium
+    { question: 'What is the period of y = sin(2x)?', options: ['2π', 'π', 'π/2', '4π'], answer: 1 }, // Medium
+    { question: 'Solve for θ in [0, 2π): sin θ = -1/2', options: ['7π/6, 11π/6', 'π/6, 5π/6', '2π/3, 4π/3', 'π/3, 2π/3'], answer: 0 } // Hard
   ],
   'Calculus': [
-    { question: 'Limit of (x²-1)/(x-1) as x→1 = ?', options: ['2', '0', '1', 'Infinity'], answer: 0 },
-    { question: 'Derivative of x² = ?', options: ['2x', 'x', 'x²', '1'], answer: 0 },
-    { question: 'Integral of 2x dx = ?', options: ['x² + C', '2x + C', 'x + C', 'x²'], answer: 0 },
-    { question: "d/dx[sin x] = ?", options: ['cos x', '-sin x', 'sin x', '-cos x'], answer: 0 },
-    { question: 'Find derivative of 3x³ = ?', options: ['9x²', 'x²', '3x²', '3x'], answer: 0 }
+    { question: 'What is the derivative of x²?', options: ['x', '2x', '2', 'x²'], answer: 1 }, // Easy
+    { question: 'What is the integral of 3 dx?', options: ['3', '3x', '3x + C', '0'], answer: 2 }, // Easy
+    { question: 'Find the limit: lim(x→0) (sin x)/x', options: ['0', '1', '∞', 'undefined'], answer: 1 }, // Medium
+    { question: 'What is the derivative of e^x?', options: ['e^x', 'xe^(x-1)', '1', 'x'], answer: 0 }, // Medium
+    { question: 'Evaluate the definite integral: ∫₀¹ x² dx', options: ['1/3', '1/2', '1', '2/3'], answer: 0 } // Hard
   ],
   'Logarithms': [
-    { question: 'logₐ(a^x) = ?', options: ['x', 'a', '1', '0'], answer: 0 },
-    { question: 'Change of base: log_b(a) = ?', options: ['ln a / ln b', 'ln b / ln a', 'a/b', 'b/a'], answer: 0 },
-    { question: 'log(100) base 10 = ?', options: ['2', '10', '100', '0'], answer: 0 },
-    { question: 'Solve: log x = 2, x = ?', options: ['100', '10', '2', '4'], answer: 0 },
-    { question: 'Property: log(ab) = ?', options: ['log a + log b', 'log a - log b', 'log(ab)', 'a log b'], answer: 0 }
+    { question: 'What is log₁₀(100)?', options: ['10', '2', '100', '1'], answer: 1 }, // Easy
+    { question: 'What is log₂(8)?', options: ['2', '3', '4', '8'], answer: 1 }, // Easy
+    { question: 'Simplify: log(3) + log(4)', options: ['log(7)', 'log(12)', 'log(3/4)', 'log(3) × log(4)'], answer: 1 }, // Medium
+    { question: 'Solve for x: log₂(x) = 5', options: ['10', '25', '32', '64'], answer: 2 }, // Medium
+    { question: 'If log₂(x) + log₂(y) = 3 and log₂(x) - log₂(y) = 1, find x:', options: ['2', '4', '6', '8'], answer: 1 } // Hard
+  ],
+  'AP Calculus': [
+    { question: 'Find the derivative of f(x) = x²sin(x) using the product rule:', options: ['2x cos(x) + x² sin(x)', '2x sin(x) + x² cos(x)', '2x sin(x) - x² cos(x)', 'x² cos(x) - 2x sin(x)'], answer: 1 }, // Hard
+    { question: 'Evaluate ∫₀^π sin²(x) dx using the identity sin²(x) = (1 - cos(2x))/2:', options: ['π', '2π', 'π/2', '0'], answer: 2 }, // Hard
+    { question: 'Find the area between y = x² and y = 4 from x = -2 to x = 2:', options: ['16/3', '8/3', '64/3', '32/3'], answer: 3 }, // Hard
+    { question: 'If f(x) = ln(x² + 1), find f′′(1) (the second derivative at x = 1):', options: ['0', '-1/2', '1/2', '-1'], answer: 1 }, // Hard
+    { question: 'Using L\'Hôpital\'s rule, find lim(x→0) [sin(3x) - 3x]/x³:', options: ['-3/2', '0', '-9/2', '3/2'], answer: 2 } // Hard
   ]
 };
 
