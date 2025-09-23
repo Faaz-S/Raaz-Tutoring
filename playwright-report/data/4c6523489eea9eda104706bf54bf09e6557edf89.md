@@ -1,0 +1,213 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - link "Skip to main content" [ref=e5] [cursor=pointer]:
+        - /url: "#main-content"
+      - link "Skip to navigation" [ref=e6] [cursor=pointer]:
+        - /url: "#navigation"
+      - link "Skip to contact form" [ref=e7] [cursor=pointer]:
+        - /url: "#contact"
+    - navigation [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e11] [cursor=pointer]:
+          - /url: /
+          - text: Raaz Tutoring
+        - button [ref=e13] [cursor=pointer]
+    - main [ref=e17]:
+      - generic [ref=e18]:
+        - generic [ref=e21]:
+          - generic [ref=e22]:
+            - img "Raaz Tutoring Logo" [ref=e23]
+            - heading "MATH INSTRUCTION YOU CAN RELY ON" [level=1] [ref=e24]:
+              - text: MATH INSTRUCTION
+              - generic [ref=e25]: YOU CAN RELY ON
+            - paragraph [ref=e26]: Interactive, personalized sessions tailored to you
+            - button "Schedule a free tutoring trial session" [ref=e27] [cursor=pointer]: Schedule Free Trial
+          - img "Math tutoring background" [ref=e30]
+        - generic [ref=e33]:
+          - generic [ref=e34]:
+            - heading "Your Success Starts Here" [level=2] [ref=e35]
+            - generic [ref=e36]:
+              - paragraph [ref=e37]: At Raaz, we turn confusion into clarity with one-on-one sessions tailored just for you. Dive into interactive lessons, instant feedback, and real results.
+              - paragraph [ref=e38]: More Than Just Math — We Build Confidence
+            - generic [ref=e39]:
+              - paragraph [ref=e40]: Explore Our Programs Here
+              - generic [ref=e41]:
+                - link "Grades 7-9" [ref=e42] [cursor=pointer]:
+                  - /url: /grades-7-9
+                - link "Grades 10-12" [ref=e43] [cursor=pointer]:
+                  - /url: /grades-10-12
+          - img "Student studying with tutor - personalized math tutoring session" [ref=e47]
+        - generic [ref=e50]:
+          - heading "Our Tutoring Services" [level=2] [ref=e51]
+          - generic [ref=e52]:
+            - generic [ref=e53]:
+              - heading "Personalized Learning" [level=3] [ref=e54]
+              - paragraph [ref=e55]: Customized lesson plans to suit each student's learning style and pace.
+            - generic [ref=e56]:
+              - heading "Experienced Tutors" [level=3] [ref=e57]
+              - paragraph [ref=e58]: Our tutors are subject-matter experts with years of teaching experience.
+            - generic [ref=e59]:
+              - heading "Flexible Scheduling" [level=3] [ref=e60]
+              - paragraph [ref=e61]: Book sessions at convenient times with our easy scheduling system.
+            - generic [ref=e62]:
+              - heading "Easily Accessible" [level=3] [ref=e63]
+              - paragraph [ref=e64]: All sessions will be held through Google meet. Laptop is recommended.
+            - generic [ref=e65]:
+              - heading "Mock Tests" [level=3] [ref=e66]
+              - paragraph [ref=e67]: Now increase your confidence through plenty of sample tests.
+            - generic [ref=e68]:
+              - heading "Specialized Test Preparation" [level=3] [ref=e69]
+              - paragraph [ref=e70]: We have specific teaching style and material for AP/IB courses.
+        - generic [ref=e72]:
+          - heading "How It Works" [level=2] [ref=e73]
+          - generic [ref=e74]:
+            - generic [ref=e75]:
+              - generic [ref=e77]: "1"
+              - img [ref=e78]
+              - heading "Fill Out the Contact Form" [level=3] [ref=e80]
+              - paragraph [ref=e81]:
+                - text: or call us at
+                - generic [ref=e82]: +1 (416) 909-2600
+                - text: or email
+                - generic [ref=e83]: raaztutoring@gmail.com
+              - button "Contact Us" [ref=e84] [cursor=pointer]
+            - generic [ref=e85]:
+              - generic [ref=e87]: "2"
+              - img [ref=e88]
+              - heading "Set Up a Free Trial" [level=3] [ref=e90]
+              - paragraph [ref=e91]: We'll reach out to schedule a free session where we'll discuss your needs, goals, and any questions you might have.
+            - generic [ref=e92]:
+              - generic [ref=e94]: "3"
+              - img [ref=e95]
+              - heading "Personalized Plan & Schedule" [level=3] [ref=e97]
+              - paragraph [ref=e98]: We'll build a personalized learning plan and finalize your preferred timing & frequency for weekly sessions.
+        - generic [ref=e100]:
+          - heading "Hear It From the Students Themselves" [level=2] [ref=e101]
+          - generic [ref=e102]:
+            - button "◀" [ref=e103] [cursor=pointer]
+            - img "Logan" [ref=e105]
+            - generic [ref=e106]:
+              - paragraph [ref=e107]: "\"When I started with Raaz, my grades were near failing. Since then my grades have improved so much that I've made the honor roll. Their teaching style has been really helpful, especially since I'm a student-athlete and don't have as much time to focus on academics. Being able to have someone like Faaz who caters to my learning ability is very beneficial.\""
+              - paragraph [ref=e108]: "- Logan"
+            - button "▶" [ref=e109] [cursor=pointer]
+        - generic [ref=e116]:
+          - generic [ref=e117]:
+            - img "Students learning together in a collaborative tutoring environment" [ref=e119]
+            - generic [ref=e120]:
+              - heading "Get in Touch" [level=3] [ref=e121]
+              - generic [ref=e122]:
+                - generic [ref=e123]:
+                  - img [ref=e124]
+                  - generic [ref=e126]: +1 (416) 909-2600
+                - generic [ref=e127]:
+                  - img [ref=e128]
+                  - generic [ref=e130]: raaztutoring@gmail.com
+          - generic [ref=e131]:
+            - heading "Frequently Asked Questions" [level=2] [ref=e132]
+            - generic [ref=e133]:
+              - group [ref=e134]:
+                - generic "What grades do you tutor? +" [ref=e135] [cursor=pointer]:
+                  - generic [ref=e136] [cursor=pointer]: What grades do you tutor?
+                  - generic [ref=e137] [cursor=pointer]: +
+              - group [ref=e138]:
+                - generic "How do I schedule a session? +" [ref=e139] [cursor=pointer]:
+                  - generic [ref=e140] [cursor=pointer]: How do I schedule a session?
+                  - generic [ref=e141] [cursor=pointer]: +
+              - group [ref=e142]:
+                - generic "Do you offer online tutoring? +" [ref=e143] [cursor=pointer]:
+                  - generic [ref=e144] [cursor=pointer]: Do you offer online tutoring?
+                  - generic [ref=e145] [cursor=pointer]: +
+              - group [ref=e146]:
+                - generic "How much does a tutoring session cost? +" [ref=e147] [cursor=pointer]:
+                  - generic [ref=e148] [cursor=pointer]: How much does a tutoring session cost?
+                  - generic [ref=e149] [cursor=pointer]: +
+              - group [ref=e150]:
+                - generic "How soon can I start? +" [ref=e151] [cursor=pointer]:
+                  - generic [ref=e152] [cursor=pointer]: How soon can I start?
+                  - generic [ref=e153] [cursor=pointer]: +
+              - group [ref=e154]:
+                - generic "Do you offer tutoring for AP or IB courses? +" [ref=e155] [cursor=pointer]:
+                  - generic [ref=e156] [cursor=pointer]: Do you offer tutoring for AP or IB courses?
+                  - generic [ref=e157] [cursor=pointer]: +
+              - group [ref=e158]:
+                - generic "⁠How do I book a session or get in touch? +" [ref=e159] [cursor=pointer]:
+                  - generic [ref=e160] [cursor=pointer]: ⁠How do I book a session or get in touch?
+                  - generic [ref=e161] [cursor=pointer]: +
+              - group [ref=e162]:
+                - generic "Do you offer trial sessions? +" [ref=e163] [cursor=pointer]:
+                  - generic [ref=e164] [cursor=pointer]: Do you offer trial sessions?
+                  - generic [ref=e165] [cursor=pointer]: +
+              - group [ref=e166]:
+                - generic "How do you measure progress? +" [ref=e167] [cursor=pointer]:
+                  - generic [ref=e168] [cursor=pointer]: How do you measure progress?
+                  - generic [ref=e169] [cursor=pointer]: +
+              - group [ref=e170]:
+                - generic "How do I pay? +" [ref=e171] [cursor=pointer]:
+                  - generic [ref=e172] [cursor=pointer]: How do I pay?
+                  - generic [ref=e173] [cursor=pointer]: +
+              - group [ref=e174]:
+                - generic "How often should I meet with a tutor? +" [ref=e175] [cursor=pointer]:
+                  - generic [ref=e176] [cursor=pointer]: How often should I meet with a tutor?
+                  - generic [ref=e177] [cursor=pointer]: +
+    - contentinfo [ref=e178]:
+      - generic [ref=e179]:
+        - generic [ref=e180]:
+          - heading "Get in Touch" [level=2] [ref=e181]
+          - generic [ref=e182]:
+            - generic [ref=e183]:
+              - generic [ref=e184]: Your Name
+              - textbox "Your Name" [ref=e185]
+            - generic [ref=e186]:
+              - generic [ref=e187]: Your Email
+              - textbox "Your Email Address" [ref=e188]
+            - generic [ref=e189]:
+              - generic [ref=e190]: Your Contact Number
+              - textbox "Your Contact Number" [ref=e191]
+              - generic [ref=e192]: Enter your phone number with at least 10 digits
+            - generic [ref=e193]:
+              - generic [ref=e194]: Your Message
+              - textbox "Your Message" [ref=e195]
+            - button "Send Message" [ref=e196] [cursor=pointer]
+        - generic [ref=e198]:
+          - generic [ref=e199]:
+            - img "Raaz Tutoring Logo" [ref=e200]
+            - generic [ref=e201]: Raaz Tutoring
+          - generic [ref=e202]:
+            - heading "Quick Links" [level=3] [ref=e203]
+            - list [ref=e204]:
+              - listitem [ref=e205]:
+                - link "Home" [ref=e206] [cursor=pointer]:
+                  - /url: /
+              - listitem [ref=e207]:
+                - link "About Us" [ref=e208] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e209]:
+                - link "Grades 7–9" [ref=e210] [cursor=pointer]:
+                  - /url: /grades-7-9
+              - listitem [ref=e211]:
+                - link "Grades 10–12" [ref=e212] [cursor=pointer]:
+                  - /url: /grades-10-12
+          - generic [ref=e213]:
+            - heading "Contact" [level=3] [ref=e214]
+            - generic [ref=e215]:
+              - paragraph [ref=e216]:
+                - text: "Email:"
+                - generic [ref=e217]: raaztutoring@gmail.com
+              - paragraph [ref=e218]:
+                - text: "Phone:"
+                - generic [ref=e219]: (416) 909-2600
+            - generic [ref=e220]:
+              - heading "Follow Us" [level=3] [ref=e221]
+              - link "Follow us on Instagram" [ref=e223] [cursor=pointer]:
+                - /url: https://www.instagram.com/raaztutoring/
+                - img [ref=e224] [cursor=pointer]
+        - generic [ref=e226]: © 2025 Raaz Tutoring. All rights reserved.
+    - button "Open accessibility controls" [ref=e229] [cursor=pointer]:
+      - img [ref=e230] [cursor=pointer]
+      - generic [ref=e232] [cursor=pointer]: Accessibility Controls
+  - generic [ref=e233]: Layout changed to mobile view
+```

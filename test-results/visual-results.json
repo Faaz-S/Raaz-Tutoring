@@ -1,0 +1,970 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\playwright.config.js",
+    "rootDir": "C:/Users/faazs/OneDrive/Desktop/Projects/raaz-tutoring/tests/visual",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 7
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/visual-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/faazs/OneDrive/Desktop/Projects/raaz-tutoring/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 7
+        },
+        "id": "chromium-desktop",
+        "name": "chromium-desktop",
+        "testDir": "C:/Users/faazs/OneDrive/Desktop/Projects/raaz-tutoring/tests/visual",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/faazs/OneDrive/Desktop/Projects/raaz-tutoring/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 7
+        },
+        "id": "firefox-desktop",
+        "name": "firefox-desktop",
+        "testDir": "C:/Users/faazs/OneDrive/Desktop/Projects/raaz-tutoring/tests/visual",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/faazs/OneDrive/Desktop/Projects/raaz-tutoring/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 7
+        },
+        "id": "webkit-desktop",
+        "name": "webkit-desktop",
+        "testDir": "C:/Users/faazs/OneDrive/Desktop/Projects/raaz-tutoring/tests/visual",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/faazs/OneDrive/Desktop/Projects/raaz-tutoring/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 7
+        },
+        "id": "tablet-ipad",
+        "name": "tablet-ipad",
+        "testDir": "C:/Users/faazs/OneDrive/Desktop/Projects/raaz-tutoring/tests/visual",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/faazs/OneDrive/Desktop/Projects/raaz-tutoring/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 7
+        },
+        "id": "tablet-landscape",
+        "name": "tablet-landscape",
+        "testDir": "C:/Users/faazs/OneDrive/Desktop/Projects/raaz-tutoring/tests/visual",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/faazs/OneDrive/Desktop/Projects/raaz-tutoring/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 7
+        },
+        "id": "mobile-chrome",
+        "name": "mobile-chrome",
+        "testDir": "C:/Users/faazs/OneDrive/Desktop/Projects/raaz-tutoring/tests/visual",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/faazs/OneDrive/Desktop/Projects/raaz-tutoring/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 7
+        },
+        "id": "mobile-safari",
+        "name": "mobile-safari",
+        "testDir": "C:/Users/faazs/OneDrive/Desktop/Projects/raaz-tutoring/tests/visual",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/faazs/OneDrive/Desktop/Projects/raaz-tutoring/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 7
+        },
+        "id": "mobile-landscape",
+        "name": "mobile-landscape",
+        "testDir": "C:/Users/faazs/OneDrive/Desktop/Projects/raaz-tutoring/tests/visual",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/faazs/OneDrive/Desktop/Projects/raaz-tutoring/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 7
+        },
+        "id": "small-mobile",
+        "name": "small-mobile",
+        "testDir": "C:/Users/faazs/OneDrive/Desktop/Projects/raaz-tutoring/tests/visual",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/faazs/OneDrive/Desktop/Projects/raaz-tutoring/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 7
+        },
+        "id": "large-desktop",
+        "name": "large-desktop",
+        "testDir": "C:/Users/faazs/OneDrive/Desktop/Projects/raaz-tutoring/tests/visual",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 7,
+    "webServer": {
+      "command": "npm run preview",
+      "url": "http://localhost:4173",
+      "reuseExistingServer": true,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "browser-device-compatibility.spec.js",
+      "file": "browser-device-compatibility.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Browser and Device Compatibility Testing",
+          "file": "browser-device-compatibility.spec.js",
+          "line": 16,
+          "column": 6,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Mobile Browser Compatibility",
+              "file": "browser-device-compatibility.spec.js",
+              "line": 42,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "iOS Safari navigation functionality",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "This test is specific to Safari/WebKit",
+                          "location": {
+                            "file": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js",
+                            "line": 44,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "expectedStatus": "skipped",
+                      "projectId": "chromium-desktop",
+                      "projectName": "chromium-desktop",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "skipped",
+                          "duration": 5178,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-09-23T04:34:12.041Z",
+                          "annotations": [
+                            {
+                              "type": "skip",
+                              "description": "This test is specific to Safari/WebKit",
+                              "location": {
+                                "file": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js",
+                                "line": 44,
+                                "column": 12
+                              }
+                            }
+                          ],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "78b0dcd22cd131bac1e8-4d2024d9c2d22dd1d063",
+                  "file": "browser-device-compatibility.spec.js",
+                  "line": 43,
+                  "column": 5
+                },
+                {
+                  "title": "Chrome Mobile touch interactions",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium-desktop",
+                      "projectName": "chromium-desktop",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "failed",
+                          "duration": 6858,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m44\u001b[39m\nReceived:    \u001b[31m41\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m44\u001b[39m\nReceived:    \u001b[31m41\u001b[39m\n    at C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js:95:40",
+                            "location": {
+                              "file": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js",
+                              "column": 40,
+                              "line": 95
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 93 |\u001b[39m             \u001b[90m// Verify minimum touch target size (44px)\u001b[39m\n \u001b[90m 94 |\u001b[39m             expect(boundingBox\u001b[33m.\u001b[39mwidth)\u001b[33m.\u001b[39mtoBeGreaterThanOrEqual(\u001b[35m44\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 95 |\u001b[39m             expect(boundingBox\u001b[33m.\u001b[39mheight)\u001b[33m.\u001b[39mtoBeGreaterThanOrEqual(\u001b[35m44\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 96 |\u001b[39m           }\n \u001b[90m 97 |\u001b[39m         }\n \u001b[90m 98 |\u001b[39m       }\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js",
+                                "column": 40,
+                                "line": 95
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m44\u001b[39m\nReceived:    \u001b[31m41\u001b[39m\n\n\u001b[0m \u001b[90m 93 |\u001b[39m             \u001b[90m// Verify minimum touch target size (44px)\u001b[39m\n \u001b[90m 94 |\u001b[39m             expect(boundingBox\u001b[33m.\u001b[39mwidth)\u001b[33m.\u001b[39mtoBeGreaterThanOrEqual(\u001b[35m44\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 95 |\u001b[39m             expect(boundingBox\u001b[33m.\u001b[39mheight)\u001b[33m.\u001b[39mtoBeGreaterThanOrEqual(\u001b[35m44\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 96 |\u001b[39m           }\n \u001b[90m 97 |\u001b[39m         }\n \u001b[90m 98 |\u001b[39m       }\u001b[0m\n\u001b[2m    at C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js:95:40\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-09-23T04:34:12.043Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\test-results\\browser-device-compatibili-48f5b-e-Mobile-touch-interactions-chromium-desktop\\test-failed-1.png"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\test-results\\browser-device-compatibili-48f5b-e-Mobile-touch-interactions-chromium-desktop\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js",
+                            "column": 40,
+                            "line": 95
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "78b0dcd22cd131bac1e8-fdcfe2bc69277166a48a",
+                  "file": "browser-device-compatibility.spec.js",
+                  "line": 76,
+                  "column": 5
+                },
+                {
+                  "title": "Firefox Mobile form interactions",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "This test is specific to Firefox",
+                          "location": {
+                            "file": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js",
+                            "line": 102,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "expectedStatus": "skipped",
+                      "projectId": "chromium-desktop",
+                      "projectName": "chromium-desktop",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "skipped",
+                          "duration": 5267,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-09-23T04:34:11.996Z",
+                          "annotations": [
+                            {
+                              "type": "skip",
+                              "description": "This test is specific to Firefox",
+                              "location": {
+                                "file": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js",
+                                "line": 102,
+                                "column": 12
+                              }
+                            }
+                          ],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "78b0dcd22cd131bac1e8-85bc24b76d5eb21a3b09",
+                  "file": "browser-device-compatibility.spec.js",
+                  "line": 101,
+                  "column": 5
+                }
+              ]
+            },
+            {
+              "title": "Cross-Device Layout Consistency",
+              "file": "browser-device-compatibility.spec.js",
+              "line": 140,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "hero section layout across devices",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium-desktop",
+                      "projectName": "chromium-desktop",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "failed",
+                          "duration": 21673,
+                          "error": {
+                            "message": "Error: A snapshot doesn't exist at C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js-snapshots\\hero-chromium-mobile-iPhone-SE-chromium-desktop-win32.png, writing actual.",
+                            "stack": "Error: A snapshot doesn't exist at C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js-snapshots\\hero-chromium-mobile-iPhone-SE-chromium-desktop-win32.png, writing actual.\n    at C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js:160:15",
+                            "location": {
+                              "file": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js",
+                              "column": 15,
+                              "line": 160
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 158 |\u001b[39m               \n \u001b[90m 159 |\u001b[39m               \u001b[90m// Take screenshot for visual comparison\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 160 |\u001b[39m               \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveScreenshot(\n \u001b[90m     |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 161 |\u001b[39m                 \u001b[32m`hero-${browserName}-${categoryName}-${deviceName.replace(/\\s+/g, '-')}.png`\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 162 |\u001b[39m                 {\n \u001b[90m 163 |\u001b[39m                   clip\u001b[33m:\u001b[39m heroBounds\u001b[33m,\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js",
+                                "column": 15,
+                                "line": 160
+                              },
+                              "message": "Error: A snapshot doesn't exist at C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js-snapshots\\hero-chromium-mobile-iPhone-SE-chromium-desktop-win32.png, writing actual.\n\n\u001b[0m \u001b[90m 158 |\u001b[39m               \n \u001b[90m 159 |\u001b[39m               \u001b[90m// Take screenshot for visual comparison\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 160 |\u001b[39m               \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveScreenshot(\n \u001b[90m     |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 161 |\u001b[39m                 \u001b[32m`hero-${browserName}-${categoryName}-${deviceName.replace(/\\s+/g, '-')}.png`\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 162 |\u001b[39m                 {\n \u001b[90m 163 |\u001b[39m                   clip\u001b[33m:\u001b[39m heroBounds\u001b[33m,\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js:160:15\u001b[22m"
+                            },
+                            {
+                              "location": {
+                                "file": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js",
+                                "column": 15,
+                                "line": 160
+                              },
+                              "message": "Error: A snapshot doesn't exist at C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js-snapshots\\hero-chromium-mobile-iPhone-12-Pro-chromium-desktop-win32.png, writing actual.\n\n\u001b[0m \u001b[90m 158 |\u001b[39m               \n \u001b[90m 159 |\u001b[39m               \u001b[90m// Take screenshot for visual comparison\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 160 |\u001b[39m               \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveScreenshot(\n \u001b[90m     |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 161 |\u001b[39m                 \u001b[32m`hero-${browserName}-${categoryName}-${deviceName.replace(/\\s+/g, '-')}.png`\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 162 |\u001b[39m                 {\n \u001b[90m 163 |\u001b[39m                   clip\u001b[33m:\u001b[39m heroBounds\u001b[33m,\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js:160:15\u001b[22m"
+                            },
+                            {
+                              "location": {
+                                "file": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js",
+                                "column": 15,
+                                "line": 160
+                              },
+                              "message": "Error: A snapshot doesn't exist at C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js-snapshots\\hero-chromium-mobile-Samsung-Galaxy-S21-chromium-desktop-win32.png, writing actual.\n\n\u001b[0m \u001b[90m 158 |\u001b[39m               \n \u001b[90m 159 |\u001b[39m               \u001b[90m// Take screenshot for visual comparison\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 160 |\u001b[39m               \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveScreenshot(\n \u001b[90m     |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 161 |\u001b[39m                 \u001b[32m`hero-${browserName}-${categoryName}-${deviceName.replace(/\\s+/g, '-')}.png`\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 162 |\u001b[39m                 {\n \u001b[90m 163 |\u001b[39m                   clip\u001b[33m:\u001b[39m heroBounds\u001b[33m,\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js:160:15\u001b[22m"
+                            },
+                            {
+                              "location": {
+                                "file": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js",
+                                "column": 15,
+                                "line": 160
+                              },
+                              "message": "Error: A snapshot doesn't exist at C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js-snapshots\\hero-chromium-mobile-Google-Pixel-5-chromium-desktop-win32.png, writing actual.\n\n\u001b[0m \u001b[90m 158 |\u001b[39m               \n \u001b[90m 159 |\u001b[39m               \u001b[90m// Take screenshot for visual comparison\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 160 |\u001b[39m               \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveScreenshot(\n \u001b[90m     |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 161 |\u001b[39m                 \u001b[32m`hero-${browserName}-${categoryName}-${deviceName.replace(/\\s+/g, '-')}.png`\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 162 |\u001b[39m                 {\n \u001b[90m 163 |\u001b[39m                   clip\u001b[33m:\u001b[39m heroBounds\u001b[33m,\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js:160:15\u001b[22m"
+                            },
+                            {
+                              "location": {
+                                "file": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js",
+                                "column": 15,
+                                "line": 160
+                              },
+                              "message": "Error: A snapshot doesn't exist at C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js-snapshots\\hero-chromium-tablet-iPad-chromium-desktop-win32.png, writing actual.\n\n\u001b[0m \u001b[90m 158 |\u001b[39m               \n \u001b[90m 159 |\u001b[39m               \u001b[90m// Take screenshot for visual comparison\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 160 |\u001b[39m               \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveScreenshot(\n \u001b[90m     |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 161 |\u001b[39m                 \u001b[32m`hero-${browserName}-${categoryName}-${deviceName.replace(/\\s+/g, '-')}.png`\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 162 |\u001b[39m                 {\n \u001b[90m 163 |\u001b[39m                   clip\u001b[33m:\u001b[39m heroBounds\u001b[33m,\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js:160:15\u001b[22m"
+                            },
+                            {
+                              "location": {
+                                "file": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js",
+                                "column": 15,
+                                "line": 160
+                              },
+                              "message": "Error: A snapshot doesn't exist at C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js-snapshots\\hero-chromium-tablet-iPad-Pro-chromium-desktop-win32.png, writing actual.\n\n\u001b[0m \u001b[90m 158 |\u001b[39m               \n \u001b[90m 159 |\u001b[39m               \u001b[90m// Take screenshot for visual comparison\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 160 |\u001b[39m               \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveScreenshot(\n \u001b[90m     |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 161 |\u001b[39m                 \u001b[32m`hero-${browserName}-${categoryName}-${deviceName.replace(/\\s+/g, '-')}.png`\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 162 |\u001b[39m                 {\n \u001b[90m 163 |\u001b[39m                   clip\u001b[33m:\u001b[39m heroBounds\u001b[33m,\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js:160:15\u001b[22m"
+                            },
+                            {
+                              "location": {
+                                "file": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js",
+                                "column": 15,
+                                "line": 160
+                              },
+                              "message": "Error: A snapshot doesn't exist at C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js-snapshots\\hero-chromium-tablet-Samsung-Galaxy-Tab-chromium-desktop-win32.png, writing actual.\n\n\u001b[0m \u001b[90m 158 |\u001b[39m               \n \u001b[90m 159 |\u001b[39m               \u001b[90m// Take screenshot for visual comparison\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 160 |\u001b[39m               \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveScreenshot(\n \u001b[90m     |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 161 |\u001b[39m                 \u001b[32m`hero-${browserName}-${categoryName}-${deviceName.replace(/\\s+/g, '-')}.png`\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 162 |\u001b[39m                 {\n \u001b[90m 163 |\u001b[39m                   clip\u001b[33m:\u001b[39m heroBounds\u001b[33m,\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js:160:15\u001b[22m"
+                            },
+                            {
+                              "location": {
+                                "file": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js",
+                                "column": 15,
+                                "line": 160
+                              },
+                              "message": "Error: A snapshot doesn't exist at C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js-snapshots\\hero-chromium-desktop-Standard-Desktop-chromium-desktop-win32.png, writing actual.\n\n\u001b[0m \u001b[90m 158 |\u001b[39m               \n \u001b[90m 159 |\u001b[39m               \u001b[90m// Take screenshot for visual comparison\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 160 |\u001b[39m               \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveScreenshot(\n \u001b[90m     |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 161 |\u001b[39m                 \u001b[32m`hero-${browserName}-${categoryName}-${deviceName.replace(/\\s+/g, '-')}.png`\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 162 |\u001b[39m                 {\n \u001b[90m 163 |\u001b[39m                   clip\u001b[33m:\u001b[39m heroBounds\u001b[33m,\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js:160:15\u001b[22m"
+                            },
+                            {
+                              "location": {
+                                "file": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js",
+                                "column": 15,
+                                "line": 160
+                              },
+                              "message": "Error: A snapshot doesn't exist at C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js-snapshots\\hero-chromium-desktop-Full-HD-chromium-desktop-win32.png, writing actual.\n\n\u001b[0m \u001b[90m 158 |\u001b[39m               \n \u001b[90m 159 |\u001b[39m               \u001b[90m// Take screenshot for visual comparison\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 160 |\u001b[39m               \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveScreenshot(\n \u001b[90m     |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 161 |\u001b[39m                 \u001b[32m`hero-${browserName}-${categoryName}-${deviceName.replace(/\\s+/g, '-')}.png`\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 162 |\u001b[39m                 {\n \u001b[90m 163 |\u001b[39m                   clip\u001b[33m:\u001b[39m heroBounds\u001b[33m,\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js:160:15\u001b[22m"
+                            },
+                            {
+                              "location": {
+                                "file": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js",
+                                "column": 15,
+                                "line": 160
+                              },
+                              "message": "Error: A snapshot doesn't exist at C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js-snapshots\\hero-chromium-desktop-2K-Display-chromium-desktop-win32.png, writing actual.\n\n\u001b[0m \u001b[90m 158 |\u001b[39m               \n \u001b[90m 159 |\u001b[39m               \u001b[90m// Take screenshot for visual comparison\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 160 |\u001b[39m               \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveScreenshot(\n \u001b[90m     |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 161 |\u001b[39m                 \u001b[32m`hero-${browserName}-${categoryName}-${deviceName.replace(/\\s+/g, '-')}.png`\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 162 |\u001b[39m                 {\n \u001b[90m 163 |\u001b[39m                   clip\u001b[33m:\u001b[39m heroBounds\u001b[33m,\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js:160:15\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-09-23T04:34:11.989Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "hero-chromium-mobile-iPhone-SE-expected.png",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js-snapshots\\hero-chromium-mobile-iPhone-SE-chromium-desktop-win32.png"
+                            },
+                            {
+                              "name": "hero-chromium-mobile-iPhone-SE-actual.png",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\test-results\\browser-device-compatibili-804b3-ction-layout-across-devices-chromium-desktop\\hero-chromium-mobile-iPhone-SE-actual.png"
+                            },
+                            {
+                              "name": "hero-chromium-mobile-iPhone-12-Pro-expected.png",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js-snapshots\\hero-chromium-mobile-iPhone-12-Pro-chromium-desktop-win32.png"
+                            },
+                            {
+                              "name": "hero-chromium-mobile-iPhone-12-Pro-actual.png",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\test-results\\browser-device-compatibili-804b3-ction-layout-across-devices-chromium-desktop\\hero-chromium-mobile-iPhone-12-Pro-actual.png"
+                            },
+                            {
+                              "name": "hero-chromium-mobile-Samsung-Galaxy-S21-expected.png",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js-snapshots\\hero-chromium-mobile-Samsung-Galaxy-S21-chromium-desktop-win32.png"
+                            },
+                            {
+                              "name": "hero-chromium-mobile-Samsung-Galaxy-S21-actual.png",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\test-results\\browser-device-compatibili-804b3-ction-layout-across-devices-chromium-desktop\\hero-chromium-mobile-Samsung-Galaxy-S21-actual.png"
+                            },
+                            {
+                              "name": "hero-chromium-mobile-Google-Pixel-5-expected.png",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js-snapshots\\hero-chromium-mobile-Google-Pixel-5-chromium-desktop-win32.png"
+                            },
+                            {
+                              "name": "hero-chromium-mobile-Google-Pixel-5-actual.png",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\test-results\\browser-device-compatibili-804b3-ction-layout-across-devices-chromium-desktop\\hero-chromium-mobile-Google-Pixel-5-actual.png"
+                            },
+                            {
+                              "name": "hero-chromium-tablet-iPad-expected.png",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js-snapshots\\hero-chromium-tablet-iPad-chromium-desktop-win32.png"
+                            },
+                            {
+                              "name": "hero-chromium-tablet-iPad-actual.png",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\test-results\\browser-device-compatibili-804b3-ction-layout-across-devices-chromium-desktop\\hero-chromium-tablet-iPad-actual.png"
+                            },
+                            {
+                              "name": "hero-chromium-tablet-iPad-Pro-expected.png",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js-snapshots\\hero-chromium-tablet-iPad-Pro-chromium-desktop-win32.png"
+                            },
+                            {
+                              "name": "hero-chromium-tablet-iPad-Pro-actual.png",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\test-results\\browser-device-compatibili-804b3-ction-layout-across-devices-chromium-desktop\\hero-chromium-tablet-iPad-Pro-actual.png"
+                            },
+                            {
+                              "name": "hero-chromium-tablet-Samsung-Galaxy-Tab-expected.png",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js-snapshots\\hero-chromium-tablet-Samsung-Galaxy-Tab-chromium-desktop-win32.png"
+                            },
+                            {
+                              "name": "hero-chromium-tablet-Samsung-Galaxy-Tab-actual.png",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\test-results\\browser-device-compatibili-804b3-ction-layout-across-devices-chromium-desktop\\hero-chromium-tablet-Samsung-Galaxy-Tab-actual.png"
+                            },
+                            {
+                              "name": "hero-chromium-desktop-Standard-Desktop-expected.png",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js-snapshots\\hero-chromium-desktop-Standard-Desktop-chromium-desktop-win32.png"
+                            },
+                            {
+                              "name": "hero-chromium-desktop-Standard-Desktop-actual.png",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\test-results\\browser-device-compatibili-804b3-ction-layout-across-devices-chromium-desktop\\hero-chromium-desktop-Standard-Desktop-actual.png"
+                            },
+                            {
+                              "name": "hero-chromium-desktop-Full-HD-expected.png",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js-snapshots\\hero-chromium-desktop-Full-HD-chromium-desktop-win32.png"
+                            },
+                            {
+                              "name": "hero-chromium-desktop-Full-HD-actual.png",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\test-results\\browser-device-compatibili-804b3-ction-layout-across-devices-chromium-desktop\\hero-chromium-desktop-Full-HD-actual.png"
+                            },
+                            {
+                              "name": "hero-chromium-desktop-2K-Display-expected.png",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js-snapshots\\hero-chromium-desktop-2K-Display-chromium-desktop-win32.png"
+                            },
+                            {
+                              "name": "hero-chromium-desktop-2K-Display-actual.png",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\test-results\\browser-device-compatibili-804b3-ction-layout-across-devices-chromium-desktop\\hero-chromium-desktop-2K-Display-actual.png"
+                            },
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\test-results\\browser-device-compatibili-804b3-ction-layout-across-devices-chromium-desktop\\test-failed-1.png"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\test-results\\browser-device-compatibili-804b3-ction-layout-across-devices-chromium-desktop\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js",
+                            "column": 15,
+                            "line": 160
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "78b0dcd22cd131bac1e8-58040c9a55e16118572a",
+                  "file": "browser-device-compatibility.spec.js",
+                  "line": 141,
+                  "column": 5
+                },
+                {
+                  "title": "navigation consistency across screen sizes",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium-desktop",
+                      "projectName": "chromium-desktop",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 9150,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-09-23T04:34:11.998Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "78b0dcd22cd131bac1e8-06bfe43700633a260fae",
+                  "file": "browser-device-compatibility.spec.js",
+                  "line": 174,
+                  "column": 5
+                }
+              ]
+            },
+            {
+              "title": "Browser-Specific Issue Detection",
+              "file": "browser-device-compatibility.spec.js",
+              "line": 204,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "Safari video autoplay handling",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Safari-specific test",
+                          "location": {
+                            "file": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js",
+                            "line": 206,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "expectedStatus": "skipped",
+                      "projectId": "chromium-desktop",
+                      "projectName": "chromium-desktop",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 5,
+                          "status": "skipped",
+                          "duration": 5200,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-09-23T04:34:12.039Z",
+                          "annotations": [
+                            {
+                              "type": "skip",
+                              "description": "Safari-specific test",
+                              "location": {
+                                "file": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js",
+                                "line": 206,
+                                "column": 12
+                              }
+                            }
+                          ],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "78b0dcd22cd131bac1e8-c15988b18755d34b9ecb",
+                  "file": "browser-device-compatibility.spec.js",
+                  "line": 205,
+                  "column": 5
+                },
+                {
+                  "title": "Firefox flexbox rendering",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Firefox-specific test",
+                          "location": {
+                            "file": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js",
+                            "line": 232,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "expectedStatus": "skipped",
+                      "projectId": "chromium-desktop",
+                      "projectName": "chromium-desktop",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 6,
+                          "status": "skipped",
+                          "duration": 5896,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-09-23T04:34:12.044Z",
+                          "annotations": [
+                            {
+                              "type": "skip",
+                              "description": "Firefox-specific test",
+                              "location": {
+                                "file": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js",
+                                "line": 232,
+                                "column": 12
+                              }
+                            }
+                          ],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "78b0dcd22cd131bac1e8-a1d599616480ad9d95a1",
+                  "file": "browser-device-compatibility.spec.js",
+                  "line": 231,
+                  "column": 5
+                },
+                {
+                  "title": "Chrome mobile viewport handling",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium-desktop",
+                      "projectName": "chromium-desktop",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 3115,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m403\u001b[39m\nReceived:    \u001b[31m425\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m403\u001b[39m\nReceived:    \u001b[31m425\u001b[39m\n    at C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js:264:25",
+                            "location": {
+                              "file": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js",
+                              "column": 25,
+                              "line": 264
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 262 |\u001b[39m       \u001b[36mconst\u001b[39m viewportWidth \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(() \u001b[33m=>\u001b[39m window\u001b[33m.\u001b[39minnerWidth)\u001b[33m;\u001b[39m\n \u001b[90m 263 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 264 |\u001b[39m       expect(bodyWidth)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(viewportWidth \u001b[33m+\u001b[39m \u001b[35m10\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m// Allow small tolerance\u001b[39m\n \u001b[90m     |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 265 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 266 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 267 |\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js",
+                                "column": 25,
+                                "line": 264
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m403\u001b[39m\nReceived:    \u001b[31m425\u001b[39m\n\n\u001b[0m \u001b[90m 262 |\u001b[39m       \u001b[36mconst\u001b[39m viewportWidth \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(() \u001b[33m=>\u001b[39m window\u001b[33m.\u001b[39minnerWidth)\u001b[33m;\u001b[39m\n \u001b[90m 263 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 264 |\u001b[39m       expect(bodyWidth)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(viewportWidth \u001b[33m+\u001b[39m \u001b[35m10\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m// Allow small tolerance\u001b[39m\n \u001b[90m     |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 265 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 266 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 267 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js:264:25\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-09-23T04:34:18.391Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\test-results\\browser-device-compatibili-f6ece-me-mobile-viewport-handling-chromium-desktop\\test-failed-1.png"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\test-results\\browser-device-compatibili-f6ece-me-mobile-viewport-handling-chromium-desktop\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\Users\\faazs\\OneDrive\\Desktop\\Projects\\raaz-tutoring\\tests\\visual\\browser-device-compatibility.spec.js",
+                            "column": 25,
+                            "line": 264
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "78b0dcd22cd131bac1e8-7a1b0466abc24fc0a229",
+                  "file": "browser-device-compatibility.spec.js",
+                  "line": 253,
+                  "column": 5
+                }
+              ]
+            },
+            {
+              "title": "Performance Across Browsers",
+              "file": "browser-device-compatibility.spec.js",
+              "line": 268,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "page load performance comparison",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium-desktop",
+                      "projectName": "chromium-desktop",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 5,
+                          "status": "passed",
+                          "duration": 3201,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "chromium load time: 1088ms\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-09-23T04:34:18.481Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "78b0dcd22cd131bac1e8-fe33833694c7e8b1f612",
+                  "file": "browser-device-compatibility.spec.js",
+                  "line": 269,
+                  "column": 5
+                },
+                {
+                  "title": "animation performance across browsers",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium-desktop",
+                      "projectName": "chromium-desktop",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 3300,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-09-23T04:34:18.551Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "78b0dcd22cd131bac1e8-d05f580ff27866957f52",
+                  "file": "browser-device-compatibility.spec.js",
+                  "line": 284,
+                  "column": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-09-23T04:34:08.692Z",
+    "duration": 26399.278,
+    "expected": 3,
+    "skipped": 4,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}
