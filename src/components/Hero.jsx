@@ -57,7 +57,7 @@ export default function Hero() {
       </section>
 
       {/* Mobile/Tablet Video Section - Below content on smaller screens */}
-      <section className="lg:hidden bg-gradient-to-b from-[#1a1a1a] to-black py-8">
+      <section className="lg:hidden bg-gradient-to-b from-[#1a1a1a] to-black py-2">
         <div className="container mx-auto px-4">
           <div className="relative overflow-hidden rounded-lg shadow-2xl max-w-md mx-auto">
             <video
