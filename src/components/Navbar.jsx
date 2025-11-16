@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 // import DarkModeToggle from './DarkModeToggle';
 import { motion } from 'framer-motion';
 import HamburgerIcon from './HamburgerIcon';
@@ -14,6 +14,7 @@ const links = [
 ];
 
 export default function Navbar() {
+  const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -22,6 +23,14 @@ export default function Navbar() {
 
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
+  };
+
+  const handleNavClick = (e, linkTo) => {
+    // If we're already on the target page, scroll to top
+    if (location.pathname === linkTo) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
   return (
@@ -36,6 +45,7 @@ export default function Navbar() {
               <NavLink
                 key={link.to}
                 to={link.to}
+                onClick={(e) => handleNavClick(e, link.to)}
                 className={({ isActive }) =>
                   `px-4 py-2 rounded-lg font-sans font-semibold text-lg transition-all duration-300 hover:scale-105 ${
                     isActive 

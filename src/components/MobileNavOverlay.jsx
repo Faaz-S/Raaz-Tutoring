@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAnimationOptimization } from '../hooks/useAnimationOptimization';
 import { createResponsiveVariants } from './OptimizedMotion';
@@ -7,6 +7,7 @@ import { useKeyboardNavigation } from '../hooks/useKeyboardNavigation';
 import { useScreenReader } from '../hooks/useScreenReader';
 
 const MobileNavOverlay = ({ isOpen, onClose, links, className = '', id, ...props }) => {
+  const location = useLocation();
   const { optimizeMotionProps, shouldAnimate, reducedMotion } = useAnimationOptimization();
   
   const {
@@ -134,6 +135,11 @@ const MobileNavOverlay = ({ isOpen, onClose, links, className = '', id, ...props
                       <NavLink
                         to={link.to}
                         onClick={(e) => {
+                          // If we're already on the target page, scroll to top
+                          if (location.pathname === link.to) {
+                            e.preventDefault();
+                            window.scrollTo({ top: 0, behavior: 'smooth' });
+                          }
                           announce(`Navigating to ${link.label}`, 'polite');
                           onClose();
                         }}

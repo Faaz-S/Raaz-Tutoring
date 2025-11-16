@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaInstagram } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import ScrollToTopLink from './ScrollToTopLink';
 import Contact from '../components/Contact';
 import logo from '/images/logo.png';
 
@@ -30,10 +31,10 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold mb-2 text-white">Quick Links</h3>
             <ul className="space-y-1">
-              <li><Link to="/" className="hover:text-white">Home</Link></li>
-              <li><Link to="/about" className="hover:text-white">About Us</Link></li>
-              <li><Link to="/grades-7-9" className="hover:text-white">Grades 7–9</Link></li>
-              <li><Link to="/grades-10-12" className="hover:text-white">Grades 10–12</Link></li>
+              <li><ScrollToTopLink to="/" className="hover:text-white">Home</ScrollToTopLink></li>
+              <li><ScrollToTopLink to="/about" className="hover:text-white">About Us</ScrollToTopLink></li>
+              <li><ScrollToTopLink to="/grades-7-9" className="hover:text-white">Grades 7–9</ScrollToTopLink></li>
+              <li><ScrollToTopLink to="/grades-10-12" className="hover:text-white">Grades 10–12</ScrollToTopLink></li>
             </ul>
           </div>
 
